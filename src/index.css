@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Theme-aware colors */
+body {
+  @apply m-0 min-h-screen text-gray-900 dark:bg-zinc-900 dark:text-gray-100;
+  background: url('/public/Login-cover.webp') no-repeat center center;
+  background-size: cover;
+}
+
+a {
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
+}
+
+button {
+  @apply rounded border border-transparent px-4 py-2 text-sm font-medium cursor-pointer transition-colors;
+  background-color: #1a1a1a;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+/* Light mode adjustments */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: #213547;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.loginText{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.registerText{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.zeffra-image{
+  margin-bottom: 10px;
+}
+
+.loggedInUser{
+  color: white;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
+}
+
+
+[data-rbd-drag-handle-context-id] {
+  cursor: grab;
+}
+
+[data-rbd-drag-handle-context-id][aria-describedby] {
+  cursor: grabbing !important;
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

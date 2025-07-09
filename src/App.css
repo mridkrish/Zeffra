@@ -1,0 +1,22 @@
+/* Base styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Optional: global card style if needed */
+.card {
+  padding: 2em;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Utility text style for 404 or empty states */
+.text-muted {
+  color: #888;
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

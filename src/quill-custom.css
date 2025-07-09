@@ -1,0 +1,38 @@
+/* quill-custom.css */
+:root {
+  --quill-bg: white;
+  --quill-text: black;
+}
+
+.dark {
+  --quill-bg: #1f2937; /* Tailwind gray-800 */
+  --quill-text: white;
+}
+
+.ql-container {
+  background-color: var(--quill-bg) !important;
+  color: var(--quill-text);
+  border: none;
+}
+
+.ql-editor {
+  min-height: 300px;
+  color: var(--quill-text);
+}
+
+.ql-toolbar {
+  background-color: var(--quill-bg);
+  color: var(--quill-text);
+  border: none;
+}
+
+.ql-toolbar button:hover,
+.ql-toolbar button:focus,
+.ql-toolbar button.ql-active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ql-toolbar .ql-picker-label,
+.ql-toolbar .ql-picker-item {
+  color: var(--quill-text);
+}
