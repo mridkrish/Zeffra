@@ -33,7 +33,7 @@ Deployment: Firebase Hosting
 💻 Local Setup
 Clone the repo
 
-git clone https://github.com/mridkrish/taskify.git
+git clone https://github.com/mridkrish/Zeffra.git
 cd taskflow
 
 Install dependencies
